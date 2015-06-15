@@ -1,7 +1,10 @@
 {
-  "name": "yolandical",
+  "name": "koweshimo",
   "version": "0.1.0",
   "type": "app",
+  "author": "Marcel Reschke <hello@marcelreschke.com> (http://marcelreschke.com/)",
+  "license": "MIT",
+  "description": "The 'KOde on WEekend, SHIp on MOnday!' application template",
   "dependencies": {
     "hoodie-plugin-appconfig": "~0.1.0",
     "hoodie-plugin-email": "~0.1.1",
@@ -9,6 +12,10 @@
     "hoodie-server": "3.1.1",
     "live-reload": "^1.1.0"
   },
+  "repository": {
+   "type": "git",
+   "url": "https://github.com/marcelreschke/koweshimo"
+ },
   "scripts": {
     "start": "node node_modules/hoodie-server/bin/start"
   },
