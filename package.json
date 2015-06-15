@@ -17,7 +17,8 @@
    "url": "https://github.com/marcelreschke/koweshimo"
  },
   "scripts": {
-    "start": "node node_modules/hoodie-server/bin/start"
+    "start": "node node_modules/hoodie-server/bin/start",
+    "live-reload": "live-reload --port 13304 www/"
   },
   "hoodie": {
     "plugins": [
