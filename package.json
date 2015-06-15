@@ -10,14 +10,20 @@
     "hoodie-plugin-email": "~0.1.1",
     "hoodie-plugin-users": "0.1.0",
     "hoodie-server": "3.1.1",
-    "live-reload": "^1.1.0"
+    "live-reload": "^1.1.0",
+    "rimraf": "^2.4.0",
+    "stylus": "^0.51.1"
   },
   "repository": {
-   "type": "git",
-   "url": "https://github.com/marcelreschke/koweshimo"
- },
+    "type": "git",
+    "url": "https://github.com/marcelreschke/koweshimo"
+  },
   "scripts": {
-    "start": "node node_modules/hoodie-server/bin/start",
+    "clean": "rimraf www/*",
+
+    "build:styles": "stylus src/assets/styles/*.styl -m -o www/css/",
+
+    "start": "npm run live-reload -s & parallelshell \"hoodie start\"",
     "live-reload": "live-reload --port 13304 www/"
   },
   "hoodie": {
