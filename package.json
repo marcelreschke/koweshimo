@@ -21,7 +21,7 @@
   "scripts": {
     "clean": "rimraf www/*",
 
-    "build:styles": "stylus src/assets/styles/*.styl -m -o www/css/",
+    "build:styles": "stylus src/assets/styles/*.styl -m -o www/assets/css/",
 
     "start": "npm run live-reload -s & parallelshell \"hoodie start\"",
     "live-reload": "live-reload --port 13304 www/"
